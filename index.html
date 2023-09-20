@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulário de Registro</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form id="meuFormulario">
+        <label for="Nome">Nome:</label>
+        <input type="text" id="Nome" name="Nome" required placeholder="Nome completo"><br>
+
+        <label for="e-mail">E-mail:</label>
+        <input type="text" id="email" name="email" required placeholder="E-mail"><br>
+        
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" name="CPF" required placeholder="Insira seu CPF"><br>
+
+        <label for="CEP">CEP:</label>
+        <input type="text" id="CEP" name="CEP" required placeholder="Informe seu CEP"><br>
+       
+        <button type="submit">Criar conta</button>
+    </form>
+
+    <p id="mensagem"></p>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./main.js"></script>    
+</body>
+</html>
