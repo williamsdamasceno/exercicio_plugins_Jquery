@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Formulário de Registro</title>
     <link rel="stylesheet" href="./main.css">
+    <link href="main.js">
 </head>
 <body>
     <form id="meuFormulario">
@@ -27,9 +28,35 @@
     </form>
 
     <p id="mensagem"></p>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js" integrity="sha512-oJCa6FS2+zO3EitUSj+xeiEN9UTr+AjqlBZO58OPadb2RfqwxHpjTU8ckIC8F4nKvom7iru2s8Jwdo+Z8zm0Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
     <script src="js/jquery.mask.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
     <script src="./main.js"></script>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ 
+            $("#CPF").mask("999.999.999-99");   // Máscara para o campo CPF 
+            $("#CEP").mask("99.999-999");           // Máscara para o campo CEP
+            
+            $('#meuFormulario').on('submit', function (event) {
+                event.preventDefault();                          // Evita que a página seja atualizada à cada envio do formulário
+                event.preventDefault();
+                
+            })
+        });
+    </script>
+
+
+
 </body>
 </html>
+    
